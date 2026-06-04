@@ -21,7 +21,7 @@
   --sh:0 2px 20px rgba(0,0,0,0.5);--sh2:0 8px 40px rgba(0,0,0,0.6)
 }
 html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',sans-serif;font-size:15px;line-height:1.45;transition:background .3s,color .3s}
-
+ 
 /* AUTH */
 #auth{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0D0D1A 0%,#1A1030 50%,#0A1628 100%)}
 #auth::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(99,102,241,0.25) 0%,transparent 70%);pointer-events:none}
@@ -46,11 +46,11 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .auth-btn:active{opacity:.85;transform:scale(.98)}
 .auth-note{font-size:11px;color:rgba(255,255,255,0.3);text-align:center;margin-top:8px;line-height:1.7}
 .auth-err{font-size:13px;color:#FCA5A5;text-align:center;min-height:18px}
-
+ 
 /* APP SHELL */
 #app{display:none;height:100vh;overflow:hidden}
 .layout{display:flex;height:100vh}
-
+ 
 /* SIDEBAR (desktop) */
 .sidebar{width:var(--sw);flex-shrink:0;background:var(--surf);border-right:1px solid var(--bdr);display:flex;flex-direction:column;padding:0;transition:background .3s,border .3s;overflow:hidden}
 .sb-header{padding:28px 20px 20px;border-bottom:1px solid var(--bdr)}
@@ -69,7 +69,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .sb-link.on svg{stroke:var(--brand)}
 .sb-bottom{padding:12px 10px;border-top:1px solid var(--bdr);display:flex;flex-direction:column;gap:4px}
 .sb-badge{display:inline-block;background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:20px;margin-left:auto}
-
+ 
 /* MAIN */
 .main{flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}
 .topbar{height:var(--th);flex-shrink:0;display:flex;align-items:center;padding:0 24px;gap:12px;background:var(--surf);border-bottom:1px solid var(--bdr);transition:background .3s}
@@ -79,7 +79,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .topbar-btn:hover{background:var(--bg2)}
 .notif-badge{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--red);border-radius:50%;border:2px solid var(--surf)}
 .content{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
-
+ 
 /* MOBILE TAB BAR */
 .tabbar{display:none;position:fixed;bottom:0;left:0;right:0;height:var(--tbh);background:var(--surf);border-top:1px solid var(--bdr);z-index:100;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .tab-row{display:flex;height:100%;padding-bottom:env(safe-area-inset-bottom)}
@@ -92,17 +92,17 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .mh-title{font-size:20px;font-weight:700;letter-spacing:-.4px;flex:1}
 .mh-btn{width:34px;height:34px;background:var(--bg);border:none;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--txt);flex-shrink:0}
 .mh-btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-
+ 
 /* VIEWS */
 .view{display:none;height:100%;overflow-y:auto;-webkit-overflow-scrolling:touch}
 .view.on{display:block}
 .vpad{padding:20px 24px 32px}
-
+ 
 /* CARDS */
 .card{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);padding:20px;margin-bottom:14px;box-shadow:var(--sh);transition:background .3s,border .3s}
 .card-lbl{font-size:11px;font-weight:700;color:var(--txt2);text-transform:uppercase;letter-spacing:.6px;margin-bottom:14px}
 .card-title{font-size:16px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px}
-
+ 
 /* HERO */
 .hero{background:var(--grad);border-radius:var(--r);padding:28px 24px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--sh2)}
 .hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:rgba(255,255,255,0.06);border-radius:50%}
@@ -114,13 +114,13 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .hero-stat{flex:1;background:rgba(255,255,255,0.12);border-radius:12px;padding:12px}
 .hero-stat-v{font-size:18px;font-weight:700;letter-spacing:-.5px}
 .hero-stat-l{font-size:11px;color:rgba(255,255,255,0.65);margin-top:2px}
-
+ 
 /* STATS GRID */
 .stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
 .stat-card{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--rs);padding:14px 16px;box-shadow:var(--sh);transition:background .3s}
 .stat-v{font-size:22px;font-weight:700;letter-spacing:-.5px}
 .stat-l{font-size:11px;color:var(--txt2);margin-top:3px}
-
+ 
 /* HOLDINGS */
 .hi{display:flex;align-items:center;padding:13px 0;border-bottom:1px solid var(--bdr);gap:12px}
 .hi:last-child{border-bottom:none}
@@ -132,7 +132,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .hiv-v{font-size:14px;font-weight:700}
 .hiv-p{font-size:11px;font-weight:600;margin-top:2px}
 .pos{color:var(--green)}.neg{color:var(--red)}.neu{color:var(--txt2)}
-
+ 
 /* BADGES */
 .badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:700;margin:2px 2px 0 0}
 .b-buy{background:rgba(16,185,129,.14);color:#059669}
@@ -142,7 +142,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .b-urg{background:rgba(239,68,68,.14);color:#DC2626}
 .b-warn{background:rgba(245,158,11,.14);color:#D97706}
 .b-ok{background:rgba(16,185,129,.14);color:#059669}
-
+ 
 /* BUTTONS */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 20px;border-radius:var(--rs);font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;transition:opacity .15s,transform .1s;border:none}
 .btn:active{opacity:.85;transform:scale(.98)}
@@ -155,7 +155,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .icon-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .icon-btn:hover{background:var(--bg2)}
 .del-btn{padding:5px 10px;background:rgba(239,68,68,.1);color:var(--red);border:none;border-radius:7px;font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0}
-
+ 
 /* FORMS */
 .fg{margin-bottom:14px}
 .fl{display:block;font-size:11px;font-weight:700;color:var(--txt2);text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
@@ -166,18 +166,18 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .seg-btn{flex:1;padding:9px;border:none;background:none;border-radius:10px;font-size:13px;font-weight:500;font-family:inherit;cursor:pointer;color:var(--txt2);transition:all .2s}
 .seg-btn.on{background:var(--grad);color:#fff;font-weight:600;box-shadow:0 2px 8px rgba(99,102,241,0.3)}
 .btn-row{display:flex;gap:8px}
-
+ 
 /* PROGRESS */
 .pbar{height:6px;background:var(--bg2);border-radius:3px;overflow:hidden;margin-top:8px}
 .pfill{height:100%;border-radius:3px;transition:width .7s ease}
 .rbar{height:4px;background:var(--bg2);border-radius:2px;overflow:hidden}
 .rfill{height:100%;border-radius:2px}
-
+ 
 /* SECTION HEADER */
 .sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .sh-t{font-size:18px;font-weight:700;letter-spacing:-.3px}
 .sh-a{font-size:13px;color:var(--brand);cursor:pointer;font-weight:500}
-
+ 
 /* INSIGHTS */
 .ins{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);padding:16px;margin-bottom:10px;display:flex;gap:12px;box-shadow:var(--sh)}
 .ins-dot{width:9px;height:9px;border-radius:50%;margin-top:4px;flex-shrink:0}
@@ -186,7 +186,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .pill{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;margin:2px}
 .pill-g{background:rgba(16,185,129,.12);color:#059669}
 .pill-r{background:rgba(239,68,68,.1);color:#DC2626}
-
+ 
 /* ALERTS */
 .alert-item{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--rs);padding:14px 16px;margin-bottom:8px;display:flex;align-items:flex-start;gap:12px;box-shadow:var(--sh)}
 .alert-icon{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -200,7 +200,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .alert-desc{font-size:12px;color:var(--txt2);line-height:1.5}
 .alert-time{font-size:11px;color:var(--txt3);margin-top:4px}
 .alert-actions{display:flex;gap:6px;margin-top:8px}
-
+ 
 /* SCORE RING */
 .score-wrap{display:flex;align-items:center;gap:16px}
 .score-ring{position:relative;width:72px;height:72px;flex-shrink:0}
@@ -209,7 +209,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .score-info{flex:1}
 .score-big{font-size:20px;font-weight:700;letter-spacing:-.3px}
 .score-sub{font-size:12px;color:var(--txt2);margin-top:3px;line-height:1.6}
-
+ 
 /* TOAST */
 #toast-container{position:fixed;top:20px;right:20px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none}
 .toast{background:var(--surf);border:1px solid var(--bdr);border-radius:14px;padding:14px 18px;box-shadow:var(--sh2);max-width:340px;pointer-events:auto;display:flex;gap:10px;align-items:flex-start;animation:slideIn .3s ease}
@@ -219,7 +219,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 @keyframes slideIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .card,.ins,.alert-item,.stat-card{animation:fadeUp .25s ease forwards}
-
+ 
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(8px);z-index:500;display:none;align-items:center;justify-content:center;padding:16px}
 .modal-overlay.open{display:flex}
@@ -227,13 +227,13 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
 .modal-title{font-size:18px;font-weight:700;letter-spacing:-.3px}
 .modal-close{width:30px;height:30px;background:var(--bg);border:none;border-radius:8px;cursor:pointer;font-size:18px;color:var(--txt2);display:flex;align-items:center;justify-content:center}
-
+ 
 /* NOTIF PANEL */
 #notif-panel{position:fixed;top:0;right:0;bottom:0;width:360px;background:var(--surf);border-left:1px solid var(--bdr);z-index:400;transform:translateX(100%);transition:transform .3s ease;overflow-y:auto;padding:24px;box-shadow:var(--sh2)}
 #notif-panel.open{transform:translateX(0)}
 .np-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
 .np-title{font-size:18px;font-weight:700}
-
+ 
 /* SCREENSHOT AREA */
 .ss-drop{border:2px dashed var(--bdr);border-radius:var(--r);padding:32px;text-align:center;cursor:pointer;transition:border .2s,background .2s;margin-bottom:16px}
 .ss-drop:hover,.ss-drop.drag{border-color:var(--brand);background:rgba(99,102,241,0.04)}
@@ -244,7 +244,7 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .ss-preview img{width:100%;display:block;border-radius:var(--rs)}
 .ss-extract{background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.15);border-radius:var(--rs);padding:14px;margin-bottom:14px}
 .ss-extract-t{font-size:12px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
-
+ 
 /* RECOMMENDATION ENGINE OUTPUT */
 .rec-card{background:linear-gradient(135deg,rgba(99,102,241,0.06),rgba(139,92,246,0.06));border:1px solid rgba(99,102,241,0.15);border-radius:var(--r);padding:18px;margin-bottom:10px}
 .rec-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
@@ -259,16 +259,16 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
 .rec-m{background:var(--surf);border-radius:10px;padding:10px;text-align:center;border:1px solid var(--bdr)}
 .rec-m-v{font-size:14px;font-weight:700}
 .rec-m-l{font-size:10px;color:var(--txt2);margin-top:2px}
-
+ 
 /* PROJECTION CHART */
 .proj-legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:10px}
 .proj-leg-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--txt2)}
 .proj-leg-line{width:14px;height:3px;border-radius:2px}
-
+ 
 /* GRID LAYOUT ON DESKTOP */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-
+ 
 /* RESPONSIVE */
 @media(max-width:768px){
   .sidebar{display:none}
@@ -289,25 +289,25 @@ html,body{height:100%;background:var(--bg);color:var(--txt);font-family:-apple-s
   .mobile-header{display:none}
   .view{height:calc(100vh - var(--th));overflow-y:auto}
 }
-
+ 
 /* SCROLLBAR */
 ::-webkit-scrollbar{width:6px;height:6px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--bg2);border-radius:3px}
-
+ 
 /* GRADIENT TEXT */
 .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
+ 
 /* DIVIDER */
 .divider{height:1px;background:var(--bdr);margin:16px 0}
-
+ 
 /* DONUT CHART */
 .chart-wrap{position:relative}
 canvas{display:block}
 </style>
 </head>
 <body>
-
+ 
 <!-- ===== AUTH SCREEN ===== -->
 <div id="auth">
   <div class="auth-box">
@@ -347,11 +347,11 @@ canvas{display:block}
     </div>
   </div>
 </div>
-
+ 
 <!-- ===== MAIN APP ===== -->
 <div id="app">
 <div class="layout">
-
+ 
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sb-header">
@@ -406,7 +406,7 @@ canvas{display:block}
       </button>
     </div>
   </aside>
-
+ 
   <!-- MAIN CONTENT -->
   <div class="main">
     <!-- Desktop top bar -->
@@ -423,22 +423,22 @@ canvas{display:block}
         <svg viewBox="0 0 24 24" id="tb-dark-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
-
+ 
     <!-- Mobile headers -->
     <div class="mobile-header" id="mh-dash">
       <div class="mh-title">Portfolio</div>
       <button class="mh-btn" onclick="openModal('ss-modal')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></button>
       <button class="mh-btn" onclick="toggleNotifPanel()"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg></button>
     </div>
-
+ 
     <!-- CONTENT AREA -->
     <div class="content" id="app-content">
-
+ 
       <!-- DASHBOARD -->
       <div class="view on" id="v-dash">
         <div class="vpad" id="dash-content"></div>
       </div>
-
+ 
       <!-- HOLDINGS -->
       <div class="view" id="v-holdings">
         <div class="vpad">
@@ -446,7 +446,7 @@ canvas{display:block}
           <div class="card" id="holdings-list"></div>
         </div>
       </div>
-
+ 
       <!-- TRADES -->
       <div class="view" id="v-trades">
         <div class="vpad">
@@ -465,12 +465,12 @@ canvas{display:block}
           <div class="card"><div class="card-lbl">履歴</div><div id="tr-list"></div></div>
         </div>
       </div>
-
+ 
       <!-- INSIGHTS -->
       <div class="view" id="v-insights">
         <div class="vpad" id="insights-content"></div>
       </div>
-
+ 
       <!-- ALERTS -->
       <div class="view" id="v-alerts">
         <div class="vpad">
@@ -478,16 +478,16 @@ canvas{display:block}
           <div id="alerts-list"></div>
         </div>
       </div>
-
+ 
       <!-- SETTINGS -->
       <div class="view" id="v-settings">
         <div class="vpad" id="settings-content"></div>
       </div>
-
+ 
     </div><!-- /content -->
   </div><!-- /main -->
 </div><!-- /layout -->
-
+ 
 <!-- MOBILE TAB BAR -->
 <nav class="tabbar">
   <div class="tab-row">
@@ -515,7 +515,7 @@ canvas{display:block}
   </div>
 </nav>
 </div><!-- /app -->
-
+ 
 <!-- NOTIFICATION PANEL -->
 <div id="notif-panel">
   <div class="np-header">
@@ -524,7 +524,7 @@ canvas{display:block}
   </div>
   <div id="notif-list"></div>
 </div>
-
+ 
 <!-- MODALS -->
 <!-- Add Holding -->
 <div class="modal-overlay" id="add-h-modal">
@@ -543,7 +543,7 @@ canvas{display:block}
     <div class="btn-row"><button class="btn btn-s btn-full" onclick="closeModal('add-h-modal')">キャンセル</button><button class="btn btn-p btn-full" onclick="addHolding()">追加する</button></div>
   </div>
 </div>
-
+ 
 <!-- Add Alert -->
 <div class="modal-overlay" id="add-alert-modal">
   <div class="modal">
@@ -561,7 +561,7 @@ canvas{display:block}
     <div class="btn-row"><button class="btn btn-s btn-full" onclick="closeModal('add-alert-modal')">キャンセル</button><button class="btn btn-p btn-full" onclick="addAlert()">作成する</button></div>
   </div>
 </div>
-
+ 
 <!-- Screenshot Import -->
 <div class="modal-overlay" id="ss-modal">
   <div class="modal">
@@ -581,18 +581,19 @@ canvas{display:block}
     <p style="font-size:11px;color:var(--txt2);margin-top:10px;line-height:1.7">※ 画像はサーバーに送信されません。すべての処理はこのデバイスで行われます。数値が正しく認識されない場合は手動で修正してください。</p>
   </div>
 </div>
-
+ 
 <!-- Toast Container -->
 <div id="toast-container"></div>
-
+ 
 <script>
 // ================================================================
 // CONSTANTS
 // ================================================================
-const SK = 'pa_pro_v1';
+// ユーザーごとに完全分離されたデータキー
+const userDataKey = (email) => 'pa_data_' + btoa(email.toLowerCase().trim()).replace(/=/g,'');
 const SESS_KEY = 'pa_session';
 const COLORS = ['#6366F1','#F59E0B','#10B981','#EF4444','#8B5CF6','#3B82F6','#EC4899','#14B8A6'];
-
+ 
 const ANALYST = {
   TMUS: {rating:'Strong Buy',upside:38.9,rec:'buy',c:'#6366F1',
     summary:'FCF増、自社株買い$4.9B継続。Q1一時費用はUS Cellular統合コストで本業は堅調。アナリスト24社がBuy、目標$260.50。',
@@ -607,14 +608,14 @@ const ANALYST = {
     summary:'YTD+16%、Norfolk Southern合併($850億)申請中(STB審査)。目標$291。燃料コスト上昇がマージン圧迫リスク。',
     cats:['NS合併承認期待','貨物需要回復','効率改善継続'],risks:['合併規制リスク','燃料コスト高']}
 };
-
+ 
 const MACRO = [
   {t:'FRB 6/16 政策会合',d:'金利据え置き予想。会合後のゴールドと米国株の反応を注視。',c:'#6366F1'},
   {t:'インフレ CPI/PCE 3.8%',d:'3年ぶりの高水準。ゴールドの下支えとFRB利下げ遅延要因。',c:'#F59E0B'},
   {t:'AI投資サイクル加速',d:'Alphabet $190B設備投資計画。テック株全体の基盤となるメガトレンド。',c:'#10B981'},
   {t:'UNP-NS 大型合併',d:'$850億鉄道合併申請中。長期的な独占的地位の確立が期待される。',c:'#EF4444'}
 ];
-
+ 
 // ================================================================
 // STATE
 // ================================================================
@@ -634,19 +635,28 @@ const DEFAULT_STATE = {
   settings:{budget:50000,t1m:30000,tTotal:300000,months:5},
   nid:10
 };
-
-let S = loadState();
+ 
+// S はログイン後にユーザーごとのデータで初期化される（ログイン前はnull）
+let S = null;
 let currentUser = null;
 let isDark = false;
 let notifPanelOpen = false;
 let alertTimer = null;
-
-function loadState(){
-  try{ const d=localStorage.getItem(SK); return d?JSON.parse(d):JSON.parse(JSON.stringify(DEFAULT_STATE)); }
-  catch(e){ return JSON.parse(JSON.stringify(DEFAULT_STATE)); }
+ 
+// ログイン済みユーザーのデータだけを読み込む
+function loadState(email){
+  try{
+    const key = userDataKey(email);
+    const d = localStorage.getItem(key);
+    return d ? JSON.parse(d) : JSON.parse(JSON.stringify(DEFAULT_STATE));
+  }catch(e){ return JSON.parse(JSON.stringify(DEFAULT_STATE)); }
 }
-const save=()=>{ try{ localStorage.setItem(SK,JSON.stringify(S)); }catch(e){} };
-
+// 必ずログイン中ユーザーのキーに保存
+const save=()=>{
+  if(!currentUser) return;
+  try{ localStorage.setItem(userDataKey(currentUser.email), JSON.stringify(S)); }catch(e){}
+};
+ 
 // ================================================================
 // AUTH
 // ================================================================
@@ -654,10 +664,10 @@ async function sha256(str){
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
   return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
 }
-
+ 
 function getUsers(){ try{ return JSON.parse(localStorage.getItem('pa_users')||'{}'); }catch(e){ return {}; } }
 function saveUsers(u){ localStorage.setItem('pa_users',JSON.stringify(u)); }
-
+ 
 async function doRegister(){
   const name=document.getElementById('r-name').value.trim();
   const email=document.getElementById('r-email').value.trim().toLowerCase();
@@ -675,7 +685,7 @@ async function doRegister(){
   err.style.color='#6EE7B7'; err.textContent='登録完了！ログインしてください';
   setTimeout(()=>{ err.textContent=''; showAuthTab('login'); document.getElementById('l-email').value=email; },1200);
 }
-
+ 
 async function doLogin(){
   const email=document.getElementById('l-email').value.trim().toLowerCase();
   const pass=document.getElementById('l-pass').value;
@@ -688,37 +698,47 @@ async function doLogin(){
   const hash=await sha256(pass+email);
   if(hash!==user.hash){ err.textContent='パスワードが正しくありません'; return; }
   currentUser=user;
+  // ログイン成功後、このユーザー専用のデータのみを読み込む
+  S = loadState(email);
   if(remember){
     const tok={email,expiry:Date.now()+(30*24*60*60*1000)};
     localStorage.setItem(SESS_KEY,JSON.stringify(tok));
   }
   startApp();
 }
-
+ 
 function checkSession(){
   try{
     const tok=JSON.parse(localStorage.getItem(SESS_KEY)||'null');
     if(!tok||tok.expiry<Date.now()) return false;
     const users=getUsers();
-    if(users[tok.email]){ currentUser=users[tok.email]; return true; }
+    if(users[tok.email]){
+      currentUser=users[tok.email];
+      // セッション復元時もそのユーザーのデータだけを読み込む
+      S = loadState(tok.email);
+      return true;
+    }
   }catch(e){}
   return false;
 }
-
+ 
 function doLogout(){
   if(!confirm('ログアウトしますか？')) return;
   localStorage.removeItem(SESS_KEY);
-  currentUser=null;
+  // メモリ上のデータを完全消去（別ユーザーがアクセスできないよう）
+  S = null;
+  currentUser = null;
+  if(alertTimer){ clearInterval(alertTimer); alertTimer=null; }
   document.getElementById('app').style.display='none';
   document.getElementById('auth').style.display='flex';
 }
-
+ 
 function showAuthTab(tab){
   document.querySelectorAll('.auth-tab').forEach((b,i)=>b.classList.toggle('on',i===(tab==='login'?0:1)));
   document.getElementById('auth-login').style.display=tab==='login'?'block':'none';
   document.getElementById('auth-register').style.display=tab==='register'?'block':'none';
 }
-
+ 
 // ================================================================
 // APP INIT
 // ================================================================
@@ -740,7 +760,7 @@ function startApp(){
   switchTab('dash');
   updateAlertBadges();
 }
-
+ 
 function toggleDark(){ setDark(!isDark); }
 function setDark(v){
   isDark=v;
@@ -748,12 +768,12 @@ function setDark(v){
   localStorage.setItem('pa_dark',v?'true':'false');
   document.getElementById('dark-label').textContent=v?'ライトモード':'ダークモード';
 }
-
+ 
 // ================================================================
 // NAVIGATION
 // ================================================================
 const TITLES = {dash:'ダッシュボード',holdings:'保有銘柄',trades:'取引記録',insights:'インサイト',alerts:'アラート',settings:'設定'};
-
+ 
 function switchTab(t){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
   document.querySelectorAll('.sb-link,.tab-btn').forEach(b=>b.classList.remove('on'));
@@ -773,13 +793,13 @@ function switchTab(t){
   if(t==='alerts')   renderAlerts();
   if(t==='settings') renderSettings();
 }
-
+ 
 function toggleEl(id){ const e=document.getElementById(id); e.style.display=e.style.display==='none'?'block':'none'; }
 function setSeg(btn,gid){ document.querySelectorAll('#'+gid+' .seg-btn').forEach(b=>b.classList.remove('on')); btn.classList.add('on'); }
 function openModal(id){ document.getElementById(id).classList.add('open'); }
 function closeModal(id){ document.getElementById(id).classList.remove('open'); }
 function toggleNotifPanel(){ notifPanelOpen=!notifPanelOpen; document.getElementById('notif-panel').classList.toggle('open',notifPanelOpen); if(notifPanelOpen) renderNotifPanel(); }
-
+ 
 // ================================================================
 // HELPERS
 // ================================================================
@@ -794,7 +814,7 @@ const fmt=  n=>'¥'+Math.abs(Math.round(n)).toLocaleString('ja-JP');
 const fmtS= n=>(n>=0?'+':'-')+fmt(n);
 const fmtP= n=>(n>=0?'+':'')+n.toFixed(2)+'%';
 const now=  ()=>new Date().toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'});
-
+ 
 // ================================================================
 // DASHBOARD
 // ================================================================
@@ -831,7 +851,7 @@ function renderDash(){
   `;
   setTimeout(drawDonut,0);
 }
-
+ 
 function hiHTML(h){
   const T=total(),w=T>0?(h.val/T*100).toFixed(1):0,p=hPnl(h),pp=hPnlP(h);
   return `<div class="hi">
@@ -840,7 +860,7 @@ function hiHTML(h){
     <div class="hiv"><div class="hiv-v">${fmt(h.val)}</div><div class="hiv-p ${p>=0?'pos':'neg'}">${fmtS(p)} (${fmtP(pp)})</div></div>
   </div>`;
 }
-
+ 
 function drawDonut(){
   const cv=document.getElementById('donut'); if(!cv) return;
   const ctx=cv.getContext('2d'), T=total();
@@ -853,7 +873,7 @@ function drawDonut(){
   const leg=document.getElementById('donut-legend');
   if(leg) leg.innerHTML=S.holdings.map(h=>`<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:10px;height:10px;border-radius:3px;background:${h.c};flex-shrink:0"></div><div><div style="font-size:12px;font-weight:700">${h.sym}</div><div style="font-size:10px;color:var(--txt2)">${(h.val/T*100).toFixed(1)}% · ${fmt(h.val)}</div></div></div>`).join('');
 }
-
+ 
 // ================================================================
 // HOLDINGS
 // ================================================================
@@ -873,7 +893,7 @@ function renderHoldings(){
       </div>
     </div>`).join('');
 }
-
+ 
 function addHolding(){
   const sym=document.getElementById('ah-sym').value.trim().toUpperCase();
   const name=document.getElementById('ah-name').value.trim();
@@ -886,21 +906,21 @@ function addHolding(){
   save(); closeModal('add-h-modal'); renderHoldings(); renderDash();
   showToast('追加完了',`${sym} を追加しました`,'#10B981');
 }
-
+ 
 function editHolding(id){
   const h=S.holdings.find(x=>x.id===id); if(!h) return;
   const v=prompt(`${h.sym} の現在評価額 (円)\n現在: ${h.val}`,h.val);
   if(v===null) return;
   const n=parseFloat(v); if(!isNaN(n)&&n>=0){ h.val=n; save(); renderHoldings(); renderDash(); showToast('更新完了',`${h.sym} を更新しました`,'#6366F1'); }
 }
-
+ 
 function delHolding(id){
   if(!confirm('この銘柄を削除しますか？')) return;
   const h=S.holdings.find(x=>x.id===id);
   S.holdings=S.holdings.filter(x=>x.id!==id); save(); renderHoldings(); renderDash();
   showToast('削除',`${h?.sym||'銘柄'} を削除しました`,'#F59E0B');
 }
-
+ 
 // ================================================================
 // TRADES
 // ================================================================
@@ -916,7 +936,7 @@ function renderTrades(){
       <div class="hiv"><div class="hiv-v">${fmt(t.sh*t.px)}</div><button class="del-btn" onclick="delTrade(${t.id})">削除</button></div>
     </div>`).join('');
 }
-
+ 
 function addTrade(){
   const act=document.querySelector('#act-seg .seg-btn.on').dataset.val;
   const sym=document.getElementById('tr-sym').value;
@@ -931,9 +951,9 @@ function addTrade(){
   save(); ['tr-sh','tr-px','tr-note'].forEach(id=>document.getElementById(id).value='');
   renderTrades(); showToast('記録完了',`${sym} ${act==='buy'?'買い':'売り'} ${sh}株`,'#10B981');
 }
-
+ 
 function delTrade(id){ if(!confirm('削除しますか？')) return; S.trades=S.trades.filter(t=>t.id!==id); save(); renderTrades(); }
-
+ 
 // ================================================================
 // INSIGHTS
 // ================================================================
@@ -950,7 +970,7 @@ function genInsights(){
   ins.push({color:'#8B5CF6',title:`月次予算 ¥${S.settings.budget.toLocaleString()} の最適配分`,desc:`推奨: TMUS 60% (¥${(S.settings.budget*0.6).toLocaleString()}) + GOOGL 40% (¥${(S.settings.budget*0.4).toLocaleString()})。Alphabetは割合が小さすぎるためリバランスを推奨。`,pri:5});
   return ins.sort((a,b)=>a.pri-b.pri);
 }
-
+ 
 function renderInsights(){
   const T=total(),P=pnl(),PP=pnlP();
   // Score
@@ -965,14 +985,14 @@ function renderInsights(){
   score=Math.min(100,Math.max(0,score));
   const sc=score>=70?'#10B981':score>=50?'#F59E0B':'#EF4444';
   const sl=score>=70?'良好':score>=50?'普通':'要改善';
-
+ 
   // Projections
   function proj(r){ let v=[T];for(let i=1;i<=6;i++) v.push(+(v[i-1]*(1+r)+S.settings.budget).toFixed(0));return v; }
   const cons=proj(0.03),mod=proj(0.08),agg=proj(0.15);
-
+ 
   // Recommendations
   const recs=genFullRecs();
-
+ 
   document.getElementById('insights-content').innerHTML=`
     <div class="card">
       <div class="card-lbl">ポートフォリオスコア</div>
@@ -1026,7 +1046,7 @@ function renderInsights(){
   `;
   setTimeout(()=>{ drawRing(score,sc); drawProjChart(cons,mod,agg); },0);
 }
-
+ 
 function genFullRecs(){
   const T=total();
   return S.holdings.map(h=>{
@@ -1040,14 +1060,14 @@ function genFullRecs(){
     return {sym:h.sym,name:h.name,rec:A.rec,logic,pnlP:pp,upside:A.upside,weight:w,cats:A.cats||[],risks:A.risks||[]};
   });
 }
-
+ 
 function drawRing(score,color){
   const cv=document.getElementById('sring'); if(!cv) return;
   const ctx=cv.getContext('2d'); ctx.clearRect(0,0,72,72);
   ctx.beginPath();ctx.arc(36,36,28,0,Math.PI*2);ctx.strokeStyle=isDark?'rgba(255,255,255,.08)':'rgba(0,0,0,.08)';ctx.lineWidth=5;ctx.stroke();
   ctx.beginPath();ctx.arc(36,36,28,-Math.PI/2,-Math.PI/2+(score/100)*Math.PI*2);ctx.strokeStyle=color;ctx.lineWidth=5;ctx.lineCap='round';ctx.stroke();
 }
-
+ 
 function drawProjChart(cons,mod,agg){
   const cv=document.getElementById('proj-chart'); if(!cv) return;
   const ctx=cv.getContext('2d'), W=cv.width, H=cv.height;
@@ -1068,7 +1088,7 @@ function drawProjChart(cons,mod,agg){
   ctx.fillStyle=isDark?'rgba(237,237,250,0.7)':'rgba(13,13,24,0.6)';ctx.font='10px -apple-system,sans-serif';ctx.textAlign='left';
   ['現在','1M','2M','3M','4M','5M','6M'].forEach((l,i)=>ctx.fillText(l,px(i)-6,H-4));
 }
-
+ 
 // ================================================================
 // ALERTS
 // ================================================================
@@ -1098,7 +1118,7 @@ function renderAlerts(){
     </div>`;
   }).join('');
 }
-
+ 
 function addAlert(){
   const type=document.querySelector('#al-type-seg .seg-btn.on').dataset.val;
   const title=document.getElementById('al-title').value.trim();
@@ -1112,10 +1132,10 @@ function addAlert(){
   // Browser notification
   if(type==='urgent') sendBrowserNotif(title,desc);
 }
-
+ 
 function markAlertRead(id){ const a=S.alerts.find(x=>x.id===id);if(a){a.read=true;save();renderAlerts();updateAlertBadges();} }
 function delAlert(id){ if(!confirm('削除しますか？'))return; S.alerts=S.alerts.filter(x=>x.id!==id);save();renderAlerts();updateAlertBadges(); }
-
+ 
 function updateAlertBadges(){
   const cnt=S.alerts.filter(a=>!a.read).length;
   const badge=document.getElementById('sb-alert-cnt');
@@ -1125,7 +1145,7 @@ function updateAlertBadges(){
   if(dot) dot.style.display=cnt>0?'block':'none';
   if(nbadge) nbadge.style.display=cnt>0?'block':'none';
 }
-
+ 
 // Alert checker
 function startAlertChecker(){
   if(alertTimer) clearInterval(alertTimer);
@@ -1141,7 +1161,7 @@ function startAlertChecker(){
     });
   },30000);
 }
-
+ 
 // ================================================================
 // SETTINGS
 // ================================================================
@@ -1189,7 +1209,7 @@ function renderSettings(){
     </div>
   `;
 }
-
+ 
 function saveSettings(){
   S.settings.budget=parseInt(document.getElementById('s-budget').value)||50000;
   S.settings.t1m=parseInt(document.getElementById('s-1m').value)||30000;
@@ -1197,7 +1217,7 @@ function saveSettings(){
   S.settings.months=parseInt(document.getElementById('s-months').value)||5;
   save(); showToast('保存完了','設定を保存しました','#10B981');
 }
-
+ 
 function exportData(){
   const b=new Blob([JSON.stringify({...S,exportDate:new Date().toISOString()},null,2)],{type:'application/json'});
   const a=document.createElement('a'); a.href=URL.createObjectURL(b);
@@ -1209,8 +1229,14 @@ function importData(e){
   r.onload=ev=>{try{S=JSON.parse(ev.target.result);save();switchTab('dash');showToast('完了','データを読み込みました','#10B981');}catch(er){showToast('エラー','ファイル形式が正しくありません','#EF4444');}};
   r.readAsText(f);
 }
-function resetData(){ S=JSON.parse(JSON.stringify(DEFAULT_STATE)); save(); switchTab('dash'); showToast('リセット完了','データを初期化しました','#F59E0B'); }
-
+function resetData(){
+  // このユーザーのデータだけをリセット（他ユーザーは影響なし）
+  S=JSON.parse(JSON.stringify(DEFAULT_STATE));
+  save();
+  switchTab('dash');
+  showToast('リセット完了','データを初期化しました','#F59E0B');
+}
+ 
 // ================================================================
 // NOTIFICATIONS
 // ================================================================
@@ -1223,11 +1249,11 @@ function showToast(title,desc,color='#6366F1'){
   S.notifications.unshift({id:S.nid++,title,desc,time:Date.now(),color}); if(S.notifications.length>50) S.notifications=S.notifications.slice(0,50); save();
   setTimeout(()=>{t.style.opacity='0';t.style.transform='translateX(20px)';t.style.transition='opacity .3s,transform .3s';setTimeout(()=>t.remove(),300);},4000);
 }
-
+ 
 function sendBrowserNotif(title,body){
   if('Notification' in window && Notification.permission==='granted') new Notification(title,{body,icon:'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="%236366F1"/><text x="32" y="44" font-size="36" text-anchor="middle" fill="white">P</text></svg>'});
 }
-
+ 
 function renderNotifPanel(){
   const el=document.getElementById('notif-list');
   if(!S.notifications.length){ el.innerHTML='<div style="text-align:center;padding:40px;color:var(--txt2)">通知はありません</div>'; return; }
@@ -1238,13 +1264,13 @@ function renderNotifPanel(){
       <div style="font-size:10px;color:var(--txt3);margin-top:4px">${new Date(n.time).toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})}</div>
     </div>`).join('');
 }
-
+ 
 // ================================================================
 // SCREENSHOT IMPORT
 // ================================================================
 function handleSSFile(e){ const f=e.target.files[0]; if(f) processSSImage(f); }
 function handleSSDrop(e){ e.preventDefault(); document.getElementById('ss-drop').classList.remove('drag'); const f=e.dataTransfer.files[0]; if(f&&f.type.startsWith('image/')) processSSImage(f); }
-
+ 
 function processSSImage(file){
   const reader=new FileReader();
   reader.onload=ev=>{
@@ -1263,7 +1289,7 @@ function processSSImage(file){
   };
   reader.readAsDataURL(file);
 }
-
+ 
 let ssExtracted=[];
 function extractFromImage(src){
   // Pattern-based extraction: detect common PayPay Securities patterns
@@ -1282,7 +1308,7 @@ function extractFromImage(src){
   document.getElementById('ss-apply-btn').style.display='block';
   showToast('画像を読み込みました','スクリーンショットの値を確認・修正してください','#6366F1');
 }
-
+ 
 function applySSData(){
   ssExtracted.forEach((h,i)=>{
     const valEl=document.getElementById(`ss-val-${i}`);
@@ -1300,7 +1326,7 @@ function applySSData(){
   document.getElementById('ss-file').value='';
   renderDash(); showToast('更新完了','保有銘柄を更新しました','#10B981');
 }
-
+ 
 // ================================================================
 // INIT
 // ================================================================
@@ -1317,3 +1343,4 @@ window.addEventListener('DOMContentLoaded',()=>{
 </script>
 </body>
 </html>
+ 
